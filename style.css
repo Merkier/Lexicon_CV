@@ -13,13 +13,13 @@ body, html {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    background-color: #f0f0f0; /* Light gray background color */
-    background-image: url('background.jpg'); /* Optional: Add a background image */
-    background-size: cover; /* Ensures the image covers the entire page */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents image from repeating */
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
-    font-family: Arial, sans-serif; /* Sets the font */
+    background-color: #f0f0f0; 
+    background-image: url('background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif; 
 }
 
 
@@ -29,32 +29,30 @@ body, html {
     max-width: 1200px;
     margin: 20px auto;
     background-color: #fff;
-    border-radius: 1%; /* Makes it a circle */
-    box-shadow: 0 0 20px 10px rgba(255, 173, 78, 0.3); /* X, Y, Blur, Spread, Color */
+    border-radius: 1%;
+    box-shadow: 0 0 20px 10px rgba(255, 173, 78, 0.3);
 }
 
 /* Left Sidebar */
 .sidebar {
-    background-color: #252526; /* Dark background */
+    background-color: #252526; 
     color: #fff;
-    padding: 20px; /* Keep padding on the sidebar */
+    padding: 20px; 
+    padding-top: 100%;
     box-sizing: border-box;
-    position: relative; /* Allows better control over child elements */
+    position: relative; 
     background-image: url(david2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
-.spacer{
-    height: 40%;
-}
 
 .profile-image {
-    display: block; /* Removes default inline spacing */
-    width: calc(100% + 40px); /* Compensates for the sidebar padding (20px on both sides) */
-    margin: -20px; /* Negative margin cancels out the sidebar padding */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures image fills the space proportionally */
-    border: none; /* Removes any default borders */
+    display: block; 
+    width: calc(100% + 40px); 
+    margin: -20px; 
+    height: auto; 
+    object-fit: cover; 
+    border: none; 
 }
 
 .sidebar h2 {
@@ -100,15 +98,14 @@ header h1 {
     color: #252526;
 }
 
-.role {
-    background-color: #000;
+footer{
+    grid-column: span 2;
+    display: grid;
+    background-color: #252526;
+    padding: 0;
     color: #fff;
-    display: inline-block;
-    padding: 5px 15px;
-    margin-top: 10px;
-    font-weight: bold;
-}
 
+}
 .section-title {
     font-size: 1.8rem;
     color: #ffa833;
@@ -170,31 +167,30 @@ header h1 {
 /* Skill Bar */
 .skill-bar {
     width: 100%;
-    height: 10px; /* Small bar height */
-    background-color: #ccc; /* Light gray background */
+    height: 10px; 
+    background-color: #ccc; 
     border-radius: 5px;
-    overflow: hidden; /* Keeps the fill within rounded corners */
+    overflow: hidden; 
     position: relative;
 }
 
 .skill-fill {
     height: 100%;
-    background-color: #ffa833; /* Orange fill color */
-    transition: width 1s ease-in-out; /* Smooth animation effect */
-    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+    background-color: #ffa833; 
+    transition: width 1s ease-in-out; 
+    border-radius: 5px 0 0 5px; 
 }
 
-    /* Responsive Design */
+
     @media (max-width: 768px) {
         .container {
-            display: block; /* Stack vertically */
-            width: 100%; /* Full width */
+            display: block; 
+            width: 100%; 
             margin: 0;
         }
 
         .sidebar {
-
-            text-align: right; /* Center sidebar content */
+            text-align: right;
             padding: 15px;
         }
 
@@ -203,12 +199,12 @@ header h1 {
         }
 
         h1 {
-            font-size: 1.5em; /* Reduce heading size */
+            font-size: 1.5em; 
         }
 
         .key-achievements {
             padding: 10px;
-            font-size: 0.9em; /* Smaller font size */
+            font-size: 0.9em; 
         }
 
         .skills{
