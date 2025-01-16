@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../merkier-casino-3"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../personalPortfolio/personal_port"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FrontEnd1"
+	}
+}
